@@ -197,3 +197,7 @@ Return this exact JSON structure:
 @app.get("/health")
 async def health():
     return {"status": "ok", "message": "StudyMind Python backend ✅"}
+
+@app.get("/")
+def home():
+    return {"message": "AI Study Notes Generator is running 🚀"}
